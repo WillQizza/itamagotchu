@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
 import App from "./App";
+import Register from "./Register";
 import { createBrowserRouter } from "react-router-dom";
 import { RouterProvider } from 'react-router';
 
@@ -10,7 +11,11 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />
-  }
+  },
+  {
+    path: "/register",
+    element: <Register />
+  },
 ]);
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
